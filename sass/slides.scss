@@ -1,0 +1,42 @@
+/* Hobbies */
+#hobbySlides {
+  text-align: center;
+}
+
+#hobbyButtons {
+  margin-top: 15px;
+}
+
+.slide {
+  text-align: center;
+  display: none;
+  overflow: hidden;
+  padding: 15px;
+  position: relative;
+}
+
+.slide img {
+  max-height: 530px;
+  max-width: 100%;
+  color: #000;
+  box-shadow: 5px 5px 8px;
+  opacity: 0.25;
+}
+
+.slide>div {
+  z-index: 9999999;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#musicSlide {
+  display: block;
+}
+
+#hobbyButtons button:first-child {
+  background-color: #ccc;
+}

@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, h1, h2, h3,h4,h5,h6 {
+  font-family: 'Georgia', sans-serif;
+}
+
+body, h1, h2 {
+  color: #333;
+}
+
+body {
+  background-color: #373538;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+
+/* Sidebar stylings */
+.w3-sidebar {
+  width: 120px;
+  background: #222;
+}
+
+#main {
+  margin-left: 120px;
+}
+
+.parallax {
+  background-image: url("../img/mtl_skyline.jpg");
+  min-height: 450px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-container {
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none;
+}
+
+/* Screen Specific */
+@media only screen and (max-width: 600px) {
+  #main {
+    margin-left: 0;
+  }
+
+  hr {
+    width: 20%;
+    margin: 0% 40% 0% 40%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .parallax {
+    min-height: 300px;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  hr {
+    width: 6%;
+    margin: 0% 47% 0% 47%;
+  }
+}
+
+/* Titlecard background fix */
+#titleCard {
+  margin-top: 2em;
+  display: inline-block;
+  margin-bottom: 2em;
+}
+@media only screen and (max-height: 750px) {
+  #titleCard {
+    background-image: linear-gradient(rgba(208, 208, 198, 0.7), rgba(222, 222, 209, 0.7));
+    border: 1px solid #333;
+    padding: 5px;
+  }
+}
+
+#avatar {
+  width: 80%;
+  height: auto;
+  margin: 0.5em 0em 0em 0.5em;
+  border-radius: 50%;
+}
+
+h1#titleName {
+  font-family: Georgia;
+  font-size: 42px;
+  color: #ae2033;
+  margin: 0px;
+  padding: 10px 10px 0px 10px;
+}
+
+h2#titleSub {
+  margin-top: 0px;
+}
+
+#btnResume {
+  margin-bottom: 10px;
+}
+
+.social {
+  justify-content: center;
+  display: flex;
+  font-size: 19px;
+}
+
+.social>ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+.social>ul>li {
+  float: left;
+  margin: 0px 0.5em;
+}
+
+#topSocial{
+  color: #333;
+}
+
+/* Page content (After title) */
+#main div.content:nth-child(even) {
+  background-color: #373538;
+  margin: 1em 3em;
+}
+
+#main div.content:nth-child(odd) {
+  background-color: #404040;
+  border-bottom: 1px solid #222;
+  border-top: 1px solid #222;
+  padding: 27px 69px;
+  margin: 0px 0px 0px 0px !important;
+  margin-right: 0px;
+}
+
+#experience {
+  padding: 27px 0px;
+}
+
+#headshot {
+  margin-top: 15px;
+  height: 18em;
+  width: auto;
+  border-radius: 4px;
+  color: #000;
+  box-shadow: 5px 5px 8px;
+}
+
+.education-card {
+  background-color: #eee;
+  color: #000;
+  padding: 15px 30px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 8px;
+  margin-top: 1em;
+}
+
+h4 {
+  margin: 0px;
+}
+
+.education-card>h5 {
+  margin: 0px;
+  color: #333;
+}
+
+.education-card  h6>a {
+  margin-right: 2em;
+  text-decoration: none;
+  color: #ae2033;
+}
+
+.education-card  h6>a:hover {
+  text-decoration: underline;
+}
+
+.education-year {
+  float: right;
+}
+
+.project-card>div:last-child {
+  padding: 15px 30px 15px 15px;
+}
+
+.project-card>div:first-child {
+  padding: 15px 15px 15px 30px;
+}
+
+.project-visual {
+  max-height: 19em;
+  width: auto;
+  display: inline-block;
+  background-color: #000;
+  color: #000;
+  box-shadow: 5px 5px 8px;
+}
+
+.project-visual img {
+  max-height: inherit;
+}
+
+#projects h5 {
+  margin: 0px;
+}
+
+#projects  h5>a {
+  text-decoration: none;
+  color: #f3bec6;
+  margin-right: 2em;
+}
+
+#projects  h5>a:hover {
+  text-decoration: underline;
+}
+
+#contact {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+#contactForm {
+  text-align: justify;
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+#contactForm > input,textarea {
+  margin-bottom: 10px;
+  background: linear-gradient(to top, #505050 0%,#505050 60%,#404040 100%);
+  color: #fff;
+}
+
+#message {
+  resize: vertical;
+  height: 14em;
+}
+
+#sendWrapper {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#sendMessage {
+  width: 100%;
+}
+
+#bottomSocial {
+  margin-top: 10px;
+  color: #fff;
+}
+
+#copyright {
+  display: inline-block;
+  padding: 1em;
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
