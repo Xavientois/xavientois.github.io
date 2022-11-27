@@ -1,524 +1,116 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/favicon.png" type="image/png" />
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
-    <title>Josh Rampersad</title>
 
-    <!-- Stylings  -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-camo.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="timeline.css">
-    <link rel="stylesheet" href="slides.css">
-    <style>
-      .w3-sidebar { width: 120px; background: #222; }
-      #titleCard { display: inline-block; margin-top: 84px; }
-      #btnResume { margin-bottom: 10px; }
-      @media only screen and (max-width: 600px) {
-        #main { margin-left: 0px; }
-        hr { width: 20%; margin: 0% 40% 0% 40%; }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+  <title>Josh Rampersad</title>
+  <!-- Stylings  -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-camo.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="timeline.css">
+  <link rel="stylesheet" href="slides.css">
+  <style>
+    .w3-sidebar {
+      width: 120px;
+      background: #222;
+    }
+
+    #titleCard {
+      display: inline-block;
+      margin-top: 84px;
+    }
+
+    #btnResume {
+      margin-bottom: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0px;
       }
-      @media only screen and (min-width: 601px) {
-        hr { width: 6%; margin: 0% 47% 0% 47%; }
+
+      hr {
+        width: 20%;
+        margin: 0% 40% 0% 40%;
       }
-    </style>
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="scripts/nav_scroll.js"></script>
-  </head>
+    }
 
-  <body class="w3-camo-black">
-    <!-- Navigation Sidebar (For large and medium screens) -->
-    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-      <!-- Small image -->
-      <img id="avatar" src="img/blue-josh-2.png" class="w3-greyscale-min"
-                                              type="image/png" alt="Avatar">
-      <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-black">
-        <p>HOME</p>
-      </a>
-      <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <p>ABOUT</p>
-      </a>
-      <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <p>EXPERIENCE</p>
-      </a>
-      <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <p>EDUCATION</p>
-      </a>
-      <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <p>PROJECTS</p>
-      </a>
-      <a href="#hobbies" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <p>HOBBIES</p>
-      </a>
-      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <p>CONTACT</p>
-      </a>
-    </nav>
+    @media only screen and (min-width: 601px) {
+      hr {
+        width: 6%;
+        margin: 0% 47% 0% 47%;
+      }
+    }
+  </style>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="scripts/nav_scroll.js"></script>
+</head>
 
-    <!-- Navigation bar on small screens -->
-    <div class="w3-top w3-hide-large w3-hide-medium">
-      <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-        <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">
-          HOME
-        </a>
-        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">
-          ABOUT
-        </a>
-        <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">
-          PROJECTS
-        </a>
-        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">
-          CONTACT
-        </a>
-      </div>
+<body class="w3-camo-black">
+  <!-- Navigation Sidebar (For large and medium screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Small image -->
+    <img id="avatar" src="img/blue-josh-2.png" class="w3-greyscale-min" type="image/png" alt="Avatar">
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-black">
+      <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <p>ABOUT</p>
+    </a>
+    <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <p>EXPERIENCE</p>
+    </a>
+    <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <p>EDUCATION</p>
+    </a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <p>PROJECTS</p>
+    </a>
+    <a href="#hobbies" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <p>HOBBIES</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <p>CONTACT</p>
+    </a>
+  </nav>
+
+  <!-- Navigation bar on small screens -->
+  <div class="w3-top w3-hide-large w3-hide-medium">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">
+        HOME
+      </a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">
+        ABOUT
+      </a>
+      <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">
+        PROJECTS
+      </a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">
+        CONTACT
+      </a>
     </div>
+  </div>
 
-    <!-- Contents of page -->
-    <div id="main">
-      <!-- Paralax Scrolling Background -->
-      <div class="parallax w3-greyscale-min w3-container w3-center" id="home">
-        <div id="titleCard" class="w3-round">
-          <h1 id="titleName">JOSHUA RAMPERSAD</h1>
-          <h2 id="titleSub">Software Developer</h2>
-          <a href="files/Joshua_Rampersad-Computer_Science.pdf" id="btnResume" class="w3-button w3-camo-black w3-round-xxlarge" target="_blank" download>
-            Download Resume
-          </a>
-          <div class="social" id="topSocial">
-            <ul>
-              <li>
-                <a href="https://github.com/Xavientois/" target="_blank">
-                  <i class="fa fa-github" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/jrampersad" target="_blank">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="mailto:j2ramper@uwaterloo.ca" target="_blank">
-                  <i class="material-icons">mail</i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- About Me -->
-      <div class="content w3-justify w3-text-light-grey
-      w3-padding-large w3-camo-black" id="about">
-        <h3>About Me</h3>
-        <hr class="w3-opacity" />
-        <div id="about_content" class="w3-cell-row w3-mobile">
-          <div class="w3-cell w3-cell-top w3-container w3-mobile">
-            <p>
-            I'm a student and programmer with a passion for performance and a
-            love for leadership. Learning is where I draw the most fulfillment
-            in life. Whether it be full-stack web development, music, acting, or
-            something completely new, I am always up to the challenge of
-            learning something new. I am currently looking for software
-            development work which will push me to improve my current skills
-            and maybe even pick up some new ones along the way.
-            With my diversity of experience, I bring many soft and hard skills
-            to any job I do.
-            </p>
-            <p>
-            When I am not learning a new skill or working to master one I
-            already know, you'll likely find me going for a run or walk to
-            a new part of the neighborhood. I also play video games (especially
-            JRPGs) and some tabletop games (Yes, I also play Dungeons &amp;
-            Dragons).
-            </p>
-          </div>
-          <div class="w3-cell w3-container w3-greyscale-min w3-mobile">
-            <img src="img/elora-gorge.jpg" alt="Headshot" id="headshot" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Work Experience -->
-      <div class="content w3-justify w3-text-light-grey" id="experience">
-        <h3>Work Experience</h3>
-        <hr class="w3-opacity" />
-        <div class="timeline">
-          <div class="tlCard tlRight">
-            <h4>September 2021 - December 2021</h4>
-            <div class="tlContent">
-              <img src="img/voiceflow_logo.png" id="voiceflowIcon" class="tlIcon">
-              <h4>Voiceflow</h4>
-              <h5>Infrastructure Engineer</h5>
-              <ul>
-                <li>Automated common developer tasks using CI/CD tooling (GitHub Actions and CircleCI)</li>
-                <li>Implemented CLI tools in Golang to streamline development and deployment workflows</li>
-                <li>Investigated and documented novel tooling and approaches to optimize processes</li>
-              </ul>
-            </div>
-          </div>
-          <div class="tlCard tlLeft">
-            <h4>May 2021 - September 2021</h4>
-            <div class="tlContent">
-              <img src="img/1password_logo.png" id="1PasswordIcon" class="tlIcon">
-              <h4>1Password</h4>
-              <h5>Software Developer</h5>
-              <ul>
-                <li>Developed features for the 1Password browser extension in Rust and Typescript (React)</li>
-                <li>Collaborated across teams to implement the browser extension for iOS and iPadOS</li>
-                <li>Extended the Typeshare library with an improved interface and additional functionality</li>
-              </ul>
-            </div>
-          </div>
-          <div class="tlCard tlRight">
-            <h4>September 2020 - December 2020</h4>
-            <div class="tlContent">
-              <img src="img/uken_logo.png" id="ukenIcon" class="tlIcon">
-              <h4>Uken Games</h4>
-              <h5>Software Engineer</h5>
-              <ul>
-                <li>Developed the incremental game
-                  <a href="https://play.google.com/store/apps/details?id=com.uken.x.am2&hl=en_CA&gl=US" target="_blank">Armoury &#38; Machine 2</a>
-                  using Unity Engine for iOS and Android mobile platforms</li>
-                <li>Collaborated with designers to implement new features to make the game more engaging and increase retention</li>
-                <li>Refactored legacy game systems for improved performance and usability</li>
-              </ul>
-            </div>
-          </div>
-          <div class="tlCard tlLeft">
-            <h4>January 2020 - August 2020</h4>
-            <div class="tlContent">
-              <img src="img/bhvr_logo.png" id="bhvrIcon" class="tlIcon">
-              <h4>Behaviour Interactive</h4>
-              <h5>Game Systems Programmer</h5>
-              <ul>
-                <li>Developed Unreal Engine game client in C++ for
-                  <a href="https://deadbydaylight.com/" target="_blank">Dead By Daylight</a>
-                  on PC, PS4, and Switch platforms
-                </li>
-                <li>Built backend API functionality using Node.js and Express</li>
-                <li>Collaborated with designers, developers, and team leads to design features
-                  and updates to existing infrastructure</li>
-              </ul>
-            </div>
-          </div>
-          <div class="tlCard tlRight">
-            <h4>April 2019 - December 2019</h4>
-            <div class="tlContent">
-              <img src="img/uwaterloo_logo.png" id="isaIcon" class="tlIcon">
-              <h4>University of Waterloo</h4>
-              <h5>Instructional Support Assistant</h5>
-              <ul>
-                <li>Taught tutorials on Object-Oriented C++ development</li>
-                <li>Held office hours and maintained course Piazza forum</li>
-                <li>Provided support to instructors and 330 students in CS 246</li>
-                <li>Organized marking sessions and managed submission server</li>
-              </ul>
-            </div>
-          </div>
-          <div class="tlCard tlLeft">
-            <h4>May 2018 - August 2018</h4>
-            <div class="tlContent">
-              <img src="img/cae_logo.png" id="caeIcon" class="tlIcon">
-              <h4>CAE</h4>
-              <h5>Analyst Programmer</h5>
-              <ul>
-                <li>Full-stack web dev using Laravel, MSSQL, and JQWidgets</li>
-                <li>Independently designed and built several web applications</li>
-                <li>Maintained communication with clients and team members
-                  throughout the development process</li>
-                <li>Handled various support issues from clients</li>
-              </ul>
-            </div>
-          </div>
-          <div class="tlCard tlRight">
-            <h4>January 2017 - December 2017</h4>
-            <div class="tlContent">
-              <img src="img/studentworks_logo.png" id="swIcon" class="tlIcon">
-              <h4>Student Works</h4>
-              <h5>Owner - Operator</h5>
-              <ul>
-                <li>Marketed through door-to-door cold calls, flyers, and online ads to accumulate over 100 clients</li>
-                <li>Sold over $30 000 worth of window and gutter cleaning services</li>
-                <li>Interviewed, hired, and trained marketing team and production teams</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Education -->
-      <div class="content w3-justify w3-text-light-grey w3-padding-large
-      w3-camo-black" id="education">
-        <h3>Education</h3>
-        <hr class="w3-opacity" />
-        <div class="education-card">
-          <h4 class="education-year">2017 - Present</h4>
-          <h4>University of Waterloo</h4>
-          <h5>Candidate for Bachelors of Computer Science, Honours, Co-op</h5>
-          <h5>Minor in Music</h5>
-          <p>
-          Currently in my 4A term studying Computer Science
-          with a minor in Music. I am currently an editor for
-          <a href="http://mathnews.uwaterloo.ca/" target="_blank">mathNEWS</a>,
-          the official newspaper of the Faculty of Mathematics.
-          I have also worked as a residence Don in the 2019-2020
-          academic year at Conrad Grebel University College.
-          </p>
-          <h6>
-            <a href="files/academic_transcript.pdf" target="_blank">
-              View Unofficial Transcript
-            </a>
-            <a href="https://youtu.be/svG6OPyKsrw" target="_blank">
-              Teaching Video
-            </a>
-          </h6>
-        </div>
-        <div class="education-card">
-          <h4 class="education-year">2016 - 2017</h4>
-          <h4>C&Eacute;GEP Vanier College</h4>
-          <h5>Computer Science and Mathematics Program</h5>
-          <p>
-          Spent a year enjoying one of the best parts of Quebec's
-          education system before learning that I could apply
-          to university early after having completed only one year
-          of my program. Ever since, I have been explaining to my
-          Ontarian friends what the C&Eacute;GEP system is.
-          </p>
-        </div>
-      </div>
-
-      <!-- Projects -->
-      <div class="content w3-justify w3-text-light-grey
-      w3-padding-large w3-camo-black" id="projects">
-        <h3>Projects</h3>
-        <hr class="w3-opacity" />
-        <div class="w3-cell-row project-card">
-          <div class="w3-cell w3-cell-top">
-            <h4>Vim Clone</h4>
-            <p>
-            The Fall term of 2018 was my last chance to get my Computer
-            Science average up if I was to have any chance of transferring
-            into my program of choice. As a result, I busted my rear-end
-            in an effort to maximize my grades in the two Computer Science
-            courses I took that term. This project is the result of many
-            hours of toiling away at the keyboard. After the weeks of staying
-            up late writing classes and fixing bugs, my teammate and I
-            were successful in creating vm, a clone of the popular text
-            editor, Vim.
-            </p>
-            <p>
-            This clone implements a subset of Vim's functionality, including
-            moving the cursor, insert mode, replace mode, yank, delete, and
-            paste, infinite undos, recordable macros, and many more!
-            </p>
-            <div class="w3-cell-row">
-              <div class="w3-cell">
-                <h5>
-                  <a href="https://git.uwaterloo.ca/rpevans/vm" target="_blank">
-                    View GitLab Repo
-                  </a>
-                  <a href="files/UML.pdf" target="_blank" download>
-                    View UML Design
-                  </a>
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div class="w3-cell">
-            <div class="project-visual">
-              <img src="img/vm.gif"/>
-            </div>
-          </div>
-        </div>
-        <div class="w3-cell-row project-card">
-          <div class="w3-cell">
-            <div class="project-visual">
-              <img src="img/ship_attack.gif"/>
-            </div>
-          </div>
-          <div class="w3-cell w3-cell-top">
-            <h4>Ship Attack Game</h4>
-            <p>
-            In grade 10, I took the Computer Science elective offered at my high
-            school. This is where I truly fell in love with programming. We
-            spent the year learning Object-Oriented Java programming and ended
-            with an open final project. The task: Make a game. This project is
-            what came out of that undertaking. The visuals may not be terribly
-            impressive, but to this day, I am proud of this game I built from
-            scratch.
-            </p>
-            <p>
-            The game is a simple top-down shooter. Using your blaster, fire at
-            enemy ships and survive the oncoming onslaught as long as possible.
-            It scrolls infintely, but once you accumulate enough points, the
-            waves of enemies get tougher and the tension rises.
-            </p>
-            <h5>
-              <a href="https://github.com/Xavientois/ShipAttack" target="_blank">
-                View GitHub Repo
-              </a>
-              <a href="files/ShipAttack.jar" target="_blank" download>
-                Download Game JAR
-              </a>
-            </h5>
-          </div>
-        </div>
-        <div class="w3-cell-row project-card">
-          <div class="w3-cell w3-cell-top">
-            <h4>Maze Solver</h4>
-            <p>
-            During one of my winter breaks, I decided that I would should
-            learn a new programming language. If I've learned anything from
-            that Udemy guy they show before <em>every</em> YouTube video, it's that
-            &#8220;Python&#146;s where it's at.&#8221; So, once I learned
-            some of the basic syntax, I decided to write an implementation
-            of the A* pathfinding algorithm to start getting used to the
-            language. This would kill two birds with one stone as I could
-            learn about a prominent pathfinding algorithm while also working
-            on my Python skills.
-            </p>
-            <p>
-            Once I had finished my maze solving script, I found testing it to
-            be quite tedious. In order to make testing smoother and to further
-            develop my Python, I also made a GUI to accompany my Solver
-            script. It is made using the Python turtle, and allows the user
-            to design mazes and then immadiately see if they are solvable.
-            </p>
-            <div class="w3-cell-row">
-              <div class="w3-cell">
-                <h5>
-                  <a href="https://github.com/Xavientois/Maze_Solver" target="_blank">
-                    View GitHub Repo
-                  </a>
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div class="w3-cell">
-            <div class="project-visual">
-              <img src="img/maze_solver.gif"/>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Hobbies -->
-      <div class="content w3-justify w3-text-light-grey" id="hobbies">
-        <h3>Hobbies</h3>
-        <hr class="w3-opacity" />
-        <div class="w3-center" id="hobbyButtons">
-          <button class="slideBtn w3-button w3-camo-grey">
-            Music
-          </button>
-          <button class="slideBtn w3-button w3-camo-grey">
-            Theatre
-          </button>
-          <button class="slideBtn w3-button w3-camo-grey">
-            Reading
-          </button>
-          <button class="slideBtn w3-button w3-camo-grey">
-            Running &amp; Cycling
-          </button>
-        </div>
-        <div id="hobbySlides">
-          <div class="slide" id="musicSlide">
-            <img src="img/qywe.jpg"/>
-            <div>
-              <h4>Music</h4>
-              <p>
-                Ever since I can remember, I have been engrossed in music.
-                My three main instruments are Trumpet, Piano, and my voice.
-                Since graduating from high school, I have been a part of
-                numerous ensembles such as
-                <a href="http://www.quebecbandassociation.com/qywe.html"
-                  target="_blank">QYWE</a>,
-                <a href="https://uwaterloo.ca/orchestra-uwaterloo/"
-                  target="_blank">orchestra@uwaterloo</a>, and
-                <a href="https://uwaterloo.ca/music/ensembles#Chamber"
-                  target="_blank">uWaterloo Chamber Choir</a>. My passion
-                for music has also lead me to pursue a minor in music
-                alongside my Computer Science degree.
-              </p>
-            </div>
-          </div>
-          <div class="slide" id="theatreSlide">
-            <img src="img/musical.jpg"/>
-            <div>
-              <h4>Theatre</h4>
-              <p>
-                My whole life, I have loved the stage. Whether it be musical
-                theatre or Shakespeare, I am in my element when I perform.
-                In addition to being a member of the Royal West Academy
-                Bardolators, I have been involved in musical theatre, community
-                theatre, and even an independent show over the years. Most
-                recently, I have bid the spotlight farewell in favour of
-                directing Conrad Grebel University College's production of
-                Beauty and the Beast.
-              </p>
-            </div>
-          </div>
-          <div class="slide" id="bookSlide">
-            <img src="img/collage.jpg"/>
-            <div>
-              <h4>Reading</h4>
-              <p>
-                Whenever I can find a couple hours to myself, my first instinct
-                is to pick up a good book and settle in to immerse myself in
-                another world. While Fantasy is my genre of choice, I will
-                enjoy any novel with an enthralling story and interesting
-                characters. I also love learning from books and have learned
-                many things from books, including personal finance and Python.
-              </p>
-            </div>
-          </div>
-          <div class="slide" id="runningSlide">
-            <img src="img/lachine_canal.jpg"/>
-            <div>
-              <h4>Running &amp; Cycling</h4>
-              <p>
-                Nothing compares to going for a run on a temperate day, except
-                maybe going for a bike ride. When the weather is nice, my
-                preferred mode of transportation is my bike. I also love going
-                for a run and listening to some interesting podcasts. Whatever
-                my way of getting around is, I love exploring new areas of
-                wherever I am and getting to know my neighborhood a little
-                better.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Contact -->
-      <div class="content w3-text-light-grey
-       w3-camo-black" id="contact">
-        <h3>Contact</h3>
-        <hr class="w3-opacity" />
-
-        <form id="contactForm">
-          <label for="name"><h4>Name</h4></label>
-          <input id="name" class="w3-input" type="text" name="name" required>
-          <label for="email"><h4>Email</h4></label>
-          <input id="email" class="w3-input" type="email" name="email" required>
-          <label for="message"><h4>Message</h4></label>
-          <textarea id="message" class="w3-input" name="message"
-            required></textarea>
-            <div id="sendWrapper">
-              <button class="w3-btn" name="submit" id="sendMessage">
-                Send
-              </button>
-            </div>
-        </form>
-
-
-        <hr class="w3-opacity" />
-
-        <div class="social" id="bottomSocial">
+  <!-- Contents of page -->
+  <div id="main">
+    <!-- Paralax Scrolling Background -->
+    <div class="parallax w3-greyscale-min w3-container w3-center" id="home">
+      <div id="titleCard" class="w3-round">
+        <h1 id="titleName">JOSHUA RAMPERSAD</h1>
+        <h2 id="titleSub">Infrastructure Engineer</h2>
+        <a href="files/Joshua_Rampersad-Computer_Science.pdf" id="btnResume"
+          class="w3-button w3-camo-black w3-round-xxlarge" target="_blank" download>
+          Download Resume
+        </a>
+        <div class="social" id="topSocial">
           <ul>
             <li>
               <a href="https://github.com/Xavientois/" target="_blank">
@@ -531,18 +123,322 @@
               </a>
             </li>
             <li>
-              <a href="mailto:j2ramper@uwaterloo.ca" target="_blank">
+              <a href="mailto:joshua.rampersad@hotmail.com" target="_blank">
                 <i class="material-icons">mail</i>
               </a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="parallax w3-greyscale-min w3-container w3-center">
-      </div>
+    </div>
 
-      <!-- Scripts that need to run after page load -->
-      <script src="scripts/slideshow.js"></script>
-      <script src="scripts/send.js"></script>
-  </body>
+    <!-- About Me -->
+    <div class="content w3-justify w3-text-light-grey
+      w3-padding-large w3-camo-black" id="about">
+      <h3>About Me</h3>
+      <hr class="w3-opacity" />
+      <div id="about_content" class="w3-cell-row w3-mobile">
+        <div class="w3-cell w3-cell-top w3-container w3-mobile">
+          <p>
+            I'm an infrastructure engineer with a love for learning and a passion
+            for open-source.
+            Whether it be software, music, acting, or something completely new, I am always up to the challenge of
+            learning something new.
+            I currently work as an Infrastructure Engineer at Voiceflow, expanding my knowledge of infrastructure,
+            voice, and startups.
+            With my diversity of experience, I bring my technical skills alongside effective communication to any
+            endeavour I embark on.
+          </p>
+          <p>
+            When I am not learning a new skill or working to master an old one, you'll likely find me going for a run or
+            walk to
+            a new part of the neighborhood. I also enjoy video games, music, and getting involved in my local community.
+          </p>
+        </div>
+        <div class="w3-cell w3-container w3-greyscale-min w3-mobile">
+          <img src="img/elora-gorge.jpg" alt="Headshot" id="headshot" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="content w3-justify w3-text-light-grey" id="experience">
+      <h3>Work Experience</h3>
+      <hr class="w3-opacity" />
+      <div class="timeline">
+        <div class="tlCard tlRight">
+          <h4>May 2022 - Present<br>September 2021 - December 2021</h4>
+          <div class="tlContent">
+            <img src="img/voiceflow_logo.png" id="voiceflowIcon" class="tlIcon">
+            <h4>Voiceflow</h4>
+            <h5>Infrastructure Engineer</h5>
+            <ul>
+              <li>Employing IaC and GitOps practices to managing development and production Kubernetes clusters</li>
+              <li>Implemented CLI tools in Golang to streamline development and deployment workflows</li>
+              <li>Automating common developer tasks using CI/CD tooling (GitHub Actions and CircleCI)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tlCard tlLeft">
+          <h4>May 2021 - September 2021</h4>
+          <div class="tlContent">
+            <img src="img/1password_logo.png" id="1PasswordIcon" class="tlIcon">
+            <h4>1Password</h4>
+            <h5>Software Developer</h5>
+            <ul>
+              <li>Developed features for the 1Password browser extension in Rust and Typescript (React)</li>
+              <li>Collaborated across teams to implement the browser extension for iOS and iPadOS</li>
+              <li>Extended the Typeshare library with an improved interface and additional functionality</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tlCard tlRight">
+          <h4>September 2020 - December 2020</h4>
+          <div class="tlContent">
+            <img src="img/uken_logo.png" id="ukenIcon" class="tlIcon">
+            <h4>Uken Games</h4>
+            <h5>Software Engineer</h5>
+            <ul>
+              <li>Developed the incremental game
+                <a href="https://play.google.com/store/apps/details?id=com.uken.x.am2&hl=en_CA&gl=US"
+                  target="_blank">Armoury &#38; Machine 2</a>
+                using Unity Engine for iOS and Android mobile platforms
+              </li>
+              <li>Collaborated with designers to implement new features to make the game more engaging and increase
+                retention</li>
+              <li>Refactored legacy game systems for improved performance and usability</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tlCard tlLeft">
+          <h4>January 2020 - August 2020</h4>
+          <div class="tlContent">
+            <img src="img/bhvr_logo.png" id="bhvrIcon" class="tlIcon">
+            <h4>Behaviour Interactive</h4>
+            <h5>Game Systems Programmer</h5>
+            <ul>
+              <li>Developed Unreal Engine game client in C++ for
+                <a href="https://deadbydaylight.com/" target="_blank">Dead By Daylight</a>
+                on PC, PS4, and Switch platforms
+              </li>
+              <li>Built backend API functionality using Node.js and Express</li>
+              <li>Collaborated with designers, developers, and team leads to design features
+                and updates to existing infrastructure</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tlCard tlRight">
+          <h4>April 2019 - December 2019</h4>
+          <div class="tlContent">
+            <img src="img/uwaterloo_logo.png" id="isaIcon" class="tlIcon">
+            <h4>University of Waterloo</h4>
+            <h5>Instructional Support Assistant</h5>
+            <ul>
+              <li>Taught tutorials on Object-Oriented C++ development</li>
+              <li>Held office hours and maintained course Piazza forum</li>
+              <li>Provided support to instructors and 330 students in CS 246</li>
+              <li>Organized marking sessions and managed submission server</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tlCard tlLeft">
+          <h4>May 2018 - August 2018</h4>
+          <div class="tlContent">
+            <img src="img/cae_logo.png" id="caeIcon" class="tlIcon">
+            <h4>CAE</h4>
+            <h5>Analyst Programmer</h5>
+            <ul>
+              <li>Full-stack web dev using Laravel, MSSQL, and JQWidgets</li>
+              <li>Independently designed and built several web applications</li>
+              <li>Maintained communication with clients and team members
+                throughout the development process</li>
+              <li>Handled various support issues from clients</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tlCard tlRight">
+          <h4>January 2017 - December 2017</h4>
+          <div class="tlContent">
+            <img src="img/studentworks_logo.png" id="swIcon" class="tlIcon">
+            <h4>Student Works</h4>
+            <h5>Owner - Operator</h5>
+            <ul>
+              <li>Marketed through door-to-door cold calls, flyers, and online ads to accumulate over 100 clients</li>
+              <li>Sold over $30 000 worth of window and gutter cleaning services</li>
+              <li>Interviewed, hired, and trained marketing team and production teams</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="content w3-justify w3-text-light-grey w3-padding-large
+      w3-camo-black" id="education">
+      <h3>Education</h3>
+      <hr class="w3-opacity" />
+      <div class="education-card">
+        <h4 class="education-year">2017 - Present</h4>
+        <h4>University of Waterloo</h4>
+        <h5>Candidate for Bachelors of Computer Science, Honours, Co-op</h5>
+        <h5>Minor in Music</h5>
+        <h6>
+          <a href="files/academic_transcript.pdf" target="_blank">
+            View Unofficial Transcript
+          </a>
+          <a href="https://youtu.be/svG6OPyKsrw" target="_blank">
+            Teaching Video
+          </a>
+        </h6>
+      </div>
+      <div class="education-card">
+        <h4 class="education-year">2016 - 2017</h4>
+        <h4>C&Eacute;GEP Vanier College</h4>
+        <h5>Computer Science and Mathematics Program</h5>
+      </div>
+    </div>
+
+
+    <!-- Hobbies -->
+    <div class="content w3-justify w3-text-light-grey" id="hobbies">
+      <h3>Hobbies</h3>
+      <hr class="w3-opacity" />
+      <div class="w3-center" id="hobbyButtons">
+        <button class="slideBtn w3-button w3-camo-grey">
+          Music
+        </button>
+        <button class="slideBtn w3-button w3-camo-grey">
+          Theatre
+        </button>
+        <button class="slideBtn w3-button w3-camo-grey">
+          Reading
+        </button>
+        <button class="slideBtn w3-button w3-camo-grey">
+          Running &amp; Cycling
+        </button>
+      </div>
+      <div id="hobbySlides">
+        <div class="slide" id="musicSlide">
+          <img src="img/qywe.jpg" />
+          <div>
+            <h4>Music</h4>
+            <p>
+              Ever since I can remember, I have been engrossed in music.
+              My three main instruments are Trumpet, Piano, and my voice.
+              Since graduating from high school, I have been a part of
+              numerous ensembles such as
+              <a href="http://www.quebecbandassociation.com/qywe.html" target="_blank">QYWE</a>,
+              <a href="https://uwaterloo.ca/orchestra-uwaterloo/" target="_blank">orchestra@uwaterloo</a>, and
+              <a href="https://uwaterloo.ca/music/ensembles#Chamber" target="_blank">uWaterloo Chamber Choir</a>. My
+              passion
+              for music has also lead me to pursue a minor in music
+              alongside my Computer Science degree.
+            </p>
+          </div>
+        </div>
+        <div class="slide" id="theatreSlide">
+          <img src="img/musical.jpg" />
+          <div>
+            <h4>Theatre</h4>
+            <p>
+              My whole life, I have loved the stage. Whether it be musical
+              theatre or Shakespeare, I am in my element when I perform.
+              In addition to being a member of the Royal West Academy
+              Bardolators, I have been involved in musical theatre, community
+              theatre, and even an independent show over the years. Most
+              recently, I have bid the spotlight farewell in favour of
+              directing Conrad Grebel University College's production of
+              Beauty and the Beast.
+            </p>
+          </div>
+        </div>
+        <div class="slide" id="bookSlide">
+          <img src="img/collage.jpg" />
+          <div>
+            <h4>Reading</h4>
+            <p>
+              Whenever I can find a couple hours to myself, my first instinct
+              is to pick up a good book and settle in to immerse myself in
+              another world. While Fantasy is my genre of choice, I will
+              enjoy any novel with an enthralling story and interesting
+              characters. I also love learning from books and have learned
+              many things from books, including personal finance and Python.
+            </p>
+          </div>
+        </div>
+        <div class="slide" id="runningSlide">
+          <img src="img/lachine_canal.jpg" />
+          <div>
+            <h4>Running &amp; Cycling</h4>
+            <p>
+              Nothing compares to going for a run on a temperate day, except
+              maybe going for a bike ride. When the weather is nice, my
+              preferred mode of transportation is my bike. I also love going
+              for a run and listening to some interesting podcasts. Whatever
+              my way of getting around is, I love exploring new areas of
+              wherever I am and getting to know my neighborhood a little
+              better.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="content w3-text-light-grey
+       w3-camo-black" id="contact">
+      <h3>Contact</h3>
+      <hr class="w3-opacity" />
+
+      <form id="contactForm">
+        <label for="name">
+          <h4>Name</h4>
+        </label>
+        <input id="name" class="w3-input" type="text" name="name" required>
+        <label for="email">
+          <h4>Email</h4>
+        </label>
+        <input id="email" class="w3-input" type="email" name="email" required>
+        <label for="message">
+          <h4>Message</h4>
+        </label>
+        <textarea id="message" class="w3-input" name="message" required></textarea>
+        <div id="sendWrapper">
+          <button class="w3-btn" name="submit" id="sendMessage">
+            Send
+          </button>
+        </div>
+      </form>
+
+
+      <hr class="w3-opacity" />
+
+      <div class="social" id="bottomSocial">
+        <ul>
+          <li>
+            <a href="https://github.com/Xavientois/" target="_blank">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/jrampersad" target="_blank">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:j2ramper@uwaterloo.ca" target="_blank">
+              <i class="material-icons">mail</i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="parallax w3-greyscale-min w3-container w3-center">
+    </div>
+
+    <!-- Scripts that need to run after page load -->
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/send.js"></script>
+</body>
+
 </html>
